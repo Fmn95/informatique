@@ -1,5 +1,5 @@
 #include "includes.h"
-
+//Lecture d un entier securisee
 int lire_entier_securise() {
     char buffer[64], *endptr;
     int val;
@@ -16,7 +16,7 @@ int lire_entier_securise() {
         return val;
     }
 }
-
+//Lecture d un flottant securisee
 float lire_flottant_securise() {
     char buffer[64], *endptr;
     float val;
@@ -33,7 +33,7 @@ float lire_flottant_securise() {
         return val;
     }
 }
-
+//Lecture d une chaine securisee
 void lire_chaine_securise(char *buffer, int taille) {
     if (fgets(buffer, taille, stdin)) {
         size_t len = strlen(buffer);

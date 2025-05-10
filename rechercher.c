@@ -1,16 +1,16 @@
 #include "includes.h"
-
+//Recherche selon criteres
 void rechercher_animaux(const Animal animaux[], int nb) {
     char nom[TAILLE_CHAINE] = "", espece[TAILLE_CHAINE] = "";
     int age_type;
 
     printf("Nom (laisser vide pour ignorer) : ");
-    lire_chaine_securise(nom, TAILLE_CHAINE);
+    lire_chaine_securise(nom, TAILLE_CHAINE);   //Securise
     printf("Espèce (laisser vide pour ignorer) : ");
-    lire_chaine_securise(espece, TAILLE_CHAINE);
+    lire_chaine_securise(espece, TAILLE_CHAINE);  //Securise
     printf("Type d’âge (0=ignorer, 1=jeune <2 ans, 2=sénior >10 ans) : ");
     age_type = lire_entier_securise();
-
+//Calcul de l annee courante
     int trouve = 0;
     int annee_courante = get_current_year();
 
@@ -34,7 +34,7 @@ void rechercher_animaux(const Animal animaux[], int nb) {
             trouve = 1;
         }
     }
-
+//Cas de non trouvaille
     if (!trouve) {
         printf("Aucun animal trouvé avec ces critères.\n");
     }

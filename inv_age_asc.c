@@ -1,5 +1,5 @@
 #include "includes.h"
-
+//Affichage animaux par tranche d age
 void afficher_par_tranche_age(const Animal animaux[], int nb) {
     if (nb == 0) {
         printf("Aucun animal à analyser.\n");
@@ -12,7 +12,16 @@ void afficher_par_tranche_age(const Animal animaux[], int nb) {
     for (int i = 0; i < nb; i++)
         ages[i] = current - animaux[i].annee_naissance;
 
-    // Tri par sélection
+    // Tri croissant des ages
+    for (int i = 0; i < nb - 1; i++) {
+        for (int j = i + 1; j < nb; j++) {
+            if (ages[i] > ages[j]) {
+                int temp = ages[i];
+                ages[i] = ages[j];
+                ages[j] = temp;
+            }
+        }
+    }
     for (int i = 0; i < nb - 1; i++) {
         for (int j = i + 1; j < nb; j++) {
             if (ages[i] > ages[j]) {

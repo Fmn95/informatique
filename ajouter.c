@@ -1,5 +1,5 @@
 #include "includes.h"
-
+//Genere un id unique pour chaque animal
 int generer_id_unique(const Animal animaux[], int nb) {
     int max = 0;
     for (int i = 0; i < nb; i++) {
@@ -7,13 +7,13 @@ int generer_id_unique(const Animal animaux[], int nb) {
     }
     return max + 1;
 }
-
+//Saisie d un animal avec refuge plein
 void ajouter_animal(Animal animaux[], int *nb) {
     if (*nb >= MAX_ANIMAUX) {
         printf("⚠️  Le refuge est plein !\n");
         return;
     }
-
+//Sinon ajout de l animal avec ses criteres
     Animal a;
     a.id = generer_id_unique(animaux, *nb);
     printf("Nom : ");

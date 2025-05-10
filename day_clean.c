@@ -1,5 +1,5 @@
 #include "includes.h"
-
+//Calcul du temps de nettoyage hebdomadaire
 void calculer_nettoyage_hebdomadaire(const Animal animaux[], int nb) {
     int total = 0;
 
@@ -17,7 +17,7 @@ void calculer_nettoyage_hebdomadaire(const Animal animaux[], int nb) {
             quotidien = 5;
             hebdo = 20;
         } else {
-            quotidien = 2; // cage vide ou espèce inconnue
+            quotidien = 2; //Cage vide ou espce inconnue
         }
 
         total += quotidien * 7 + hebdo;

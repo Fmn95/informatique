@@ -1,12 +1,12 @@
-#include "includes.h"
+#include "includes.h" //Fichier des bibliotheques
 
 int main() {
-    Animal chenil[MAX_ANIMAUX];
-    int nb_animaux = 0;
+    Animal chenil[MAX_ANIMAUX]; //Tableau contenant animaux du refuge
+    int nb_animaux = 0;   //Nombre actuel animaux
 
     while (1) {
         afficher_menu();
-        int choix = lire_entier_securise();
+        int choix = lire_entier_securise(); //Lecture securisee
         switch (choix) {
             case 1:
                 ajouter_animal(chenil, &nb_animaux);
@@ -33,7 +33,7 @@ int main() {
 
     return 0;
 }
-
+//Affichage du menu principal
 void afficher_menu() {
     printf("\n--- Menu Chenil ---\n");
     printf("1. Ajouter un animal\n");
