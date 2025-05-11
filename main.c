@@ -35,12 +35,12 @@ int main() {
 }
 //Affichage du menu principal
 void afficher_menu() {
-    printf("\n--- Menu Chenil ---\n");
-    printf("1. Ajouter un animal\n");
-    printf("2. Rechercher un animal\n");
-    printf("3. Adopter un animal\n");
-    printf("4. Inventaire par tranche d’âge (INV_AGE_ASC)\n");
-    printf("5. Charge de nettoyage (DAY_CLEAN)\n");
-    printf("0. Quitter\n");
-    printf("Votre choix : ");
+    printf("\n🐾 --- Menu Chenil ---\n");
+    printf("1. 🆕🐕 Ajouter un animal\n");
+    printf("2. 🔍 Rechercher un animal\n");
+    printf("3. 🏠 Adopter un animal\n");
+    printf("4. 📊 Inventaire par tranche d’âge (INV_AGE_ASC)\n");
+    printf("5. 🧹 Charge de nettoyage (DAY_CLEAN)\n");
+    printf("0. 🚪 Quitter\n");
+    printf("🎯 Votre choix : ");
 }

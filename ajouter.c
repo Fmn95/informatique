@@ -18,7 +18,7 @@ void ajouter_animal(Animal animaux[], int *nb) {
     a.id = generer_id_unique(animaux, *nb);
     printf("Nom : ");
     lire_chaine_securise(a.nom, TAILLE_CHAINE);
-    printf("Espèce (chien, chat, hamster, autruche) : ");
+    printf("Espèce (chien, chat, hamster, autruche, autre) : ");
     lire_chaine_securise(a.espece, TAILLE_CHAINE);
     printf("Année de naissance : ");
     a.annee_naissance = lire_entier_securise();
