@@ -32,7 +32,7 @@ void calculer_nettoyage_hebdomadaire(const Animal[], int);
 int lire_entier_securise();
 float lire_flottant_securise();
 void lire_chaine_securise(char*, int);
-int get_current_year();
+int annee_courante();
 void afficher_menu();
 
 #endif
