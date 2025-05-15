@@ -12,10 +12,10 @@ void rechercher_animaux(const Animal animaux[], int nb) {
     age_type = lire_entier_securise();
 //Calcul de l annee courante
     int trouve = 0;
-    int annee_courante = get_current_year();
+    int annee_courant = annee_courante();
 
     for (int i = 0; i < nb; i++) {
-        int age = annee_courante - animaux[i].annee_naissance;
+        int age = annee_courant - animaux[i].annee_naissance;
         int correspond = 1;
 
         if (strlen(nom) > 0 && strstr(animaux[i].nom, nom) == NULL)
