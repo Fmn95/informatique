@@ -8,7 +8,7 @@ void rechercher_animaux(const Animal animaux[], int nb) {
     lire_chaine_securise(nom, TAILLE_CHAINE);   //Securise
     printf("Espèce (laisser vide pour ignorer) : ");
     lire_chaine_securise(espece, TAILLE_CHAINE);  //Securise
-    printf("Type d’âge (0=ignorer, 1=jeune <2 ans, 2=sénior >10 ans) : ");
+    printf("Type d’âge (1=jeune <2 ans, 2=sénior >10 ans, autre nombre = ignorer) : ");
     age_type = lire_entier_securise();
 //Calcul de l annee courante
     int trouve = 0;
