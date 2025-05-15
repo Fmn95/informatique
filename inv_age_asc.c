@@ -6,7 +6,7 @@ void afficher_par_tranche_age(const Animal animaux[], int nb) {
         return;
     }
 
-    int current = get_current_year();
+    int current = annee_courante();
     int ages[MAX_ANIMAUX];
 
     for (int i = 0; i < nb; i++)
