@@ -22,15 +22,6 @@ void afficher_par_tranche_age(const Animal animaux[], int nb) {
             }
         }
     }
-    for (int i = 0; i < nb - 1; i++) {
-        for (int j = i + 1; j < nb; j++) {
-            if (ages[i] > ages[j]) {
-                int temp = ages[i];
-                ages[i] = ages[j];
-                ages[j] = temp;
-            }
-        }
-    }
 
     int q1 = ages[nb / 4];
     int q2 = ages[nb / 2];
